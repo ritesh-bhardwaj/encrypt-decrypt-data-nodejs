@@ -40,8 +40,9 @@ var dataObj = {};
 dataObj.email = 'user@example.com';
 dataObj.id = 2451;
 
-var encrytedText = crypt.encryptData(dataObj);
+var encrytedText = encryptData(dataObj);
 console.log(`Encrypted text - ${encrytedText}`);
-console.log(`Decrypted text - ${crypt.decryptData(obj)}`);
+console.log(`Decrypted text: `);
+console.log(decryptData(encrytedText));
 
 //module.exports = { encryptData, decryptData };
